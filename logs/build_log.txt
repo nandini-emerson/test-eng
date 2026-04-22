@@ -1,0 +1,43 @@
+2026-04-19 12:31:47 | INFO     | build_process:883 | Starting build process...
+2026-04-19 12:31:57 | INFO     | build_process:995 | Resolved build LLM config: provider=openai, model=gpt-5-mini
+2026-04-19 12:31:57 | INFO     | build_process:1104 | Initializing code generation agent...
+2026-04-19 12:32:02 | INFO     | build_process:1121 | Generating agent code...
+2026-04-19 12:32:03 | INFO     | modules.builder.code_generation_agent:966 | Starting code generation process
+2026-04-19 12:32:03 | INFO     | modules.builder.code_generation_agent:967 | Generating components: main_agent_code, config_code, requirements_code, readme_code, test_code, deployment_config
+2026-04-19 12:32:03 | INFO     | modules.builder.code_generation_agent:974 | Generating main agent code...
+2026-04-19 12:32:03 | INFO     | modules.builder.code_generation_agent:1047 | Attempting to generate main agent code using LLM
+2026-04-19 12:32:03 | INFO     | modules.builder.code_generation_agent:1053 | Design serialized to JSON for LLM: 32287 chars
+2026-04-19 12:32:03 | INFO     | modules.builder.code_generation_agent:1099 | No api_requirements in design - no KB API section to extract
+2026-04-19 12:33:47 | INFO     | modules.builder.code_generation_agent:1073 | Main agent code successfully generated using LLM
+2026-04-19 12:33:47 | INFO     | modules.builder.code_generation_agent:988 | Main agent code generated successfully: 48990 characters
+2026-04-19 12:33:47 | INFO     | modules.builder.code_generation_agent:991 | Generating configuration code...
+2026-04-19 12:33:47 | INFO     | modules.builder.code_generation_agent:1288 | Attempting to generate config code using LLM
+2026-04-19 12:34:19 | INFO     | modules.builder.code_generation_agent:1321 | Config code successfully generated using LLM
+2026-04-19 12:34:19 | INFO     | modules.builder.code_generation_agent:997 | Configuration code generated successfully: 10100 characters
+2026-04-19 12:34:19 | INFO     | modules.builder.code_generation_agent:1000 | Generating requirements.txt...
+2026-04-19 12:34:19 | INFO     | modules.builder.code_generation_agent:1355 | Attempting to generate requirements.txt using LLM analysis
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1367 | Requirements.txt successfully generated using LLM
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1007 | Requirements code generated successfully: 219 characters
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1010 | Generating README.md...
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1383 | Generating README.md using template
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1400 | README.md generated successfully
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1012 | README code generated successfully: 913 characters
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1015 | Generating test code...
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1408 | Generating test code using template
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1424 | Test code generated successfully
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1017 | Test code generated successfully: 1076 characters
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1020 | Generating deployment configuration...
+2026-04-19 12:34:40 | INFO     | modules.builder.code_generation_agent:1432 | Attempting to generate deployment config using LLM
+2026-04-19 12:35:03 | INFO     | modules.builder.code_generation_agent:1460 | Deployment config successfully generated using LLM
+2026-04-19 12:35:03 | INFO     | modules.builder.code_generation_agent:1026 | Deployment config generated successfully: 2305 characters
+2026-04-19 12:35:03 | INFO     | modules.builder.code_generation_agent:1028 | Code generation process completed successfully
+2026-04-19 12:35:05 | INFO     | build_process:1166 | Code validation skipped for build (no guardrails/content safety/credentials checks)
+2026-04-19 12:35:05 | INFO     | build_process:1179 | Saving generated code files...
+2026-04-19 12:35:12 | INFO     | build_process:1267 | Test code also saved to d2dd4f4b-3e71-488b-8e39-8998328249e8/e2d9798f-7787-4287-a680-8dce1b86c408/builds/399a9c77-085b-4022-ad3a-38e99c3e90de/testcase/testcode/test_agent.py
+2026-04-19 12:35:14 | INFO     | build_process:1283 | Added required prebuilt module 'guardrails' for runtime safety packaging
+2026-04-19 12:35:14 | INFO     | build_process:1287 | Copying prebuilt modules: ['llm', 'guardrails']
+2026-04-19 12:35:14 | INFO     | modules.builder.code_generation_agent:1505 | Copying 2 prebuilt module(s): ['llm', 'guardrails']
+2026-04-19 12:35:27 | INFO     | modules.builder.code_generation_agent:1516 | Successfully copied 13 files from 2 module(s)
+2026-04-19 12:35:27 | INFO     | build_process:1299 | Successfully copied 13 files from prebuilt modules
+2026-04-19 12:35:39 | INFO     | build_process:1425 | Observability module bundled: 12 file(s) copied to code/observability/
+2026-04-19 12:35:39 | INFO     | build_process:1434 | Build completed successfully!
